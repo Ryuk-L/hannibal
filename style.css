@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playpen Sans', cursive;
+    background-color: #222629 !important;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.content{
+    padding: 22px 40px;
+    
+}
+footer {
+        position: relative;
+        margin-top: auto;
+}
+.inbox-text{
+    margin-left: 30%;
+    margin-top: 10%;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    min-height: 100vh;
+}
+.inbox-text h1{
+  
+    font-size: 50px;
+    line-height: 160px;
+    
+}
+
+.inbox-text button{
+    text-align: center;
+    width: 147px;
+    margin-top:30px;
+    display: inline-block;
+    border-radius: 6px;
+    border:2px solid #86c232 ;
+    color: #86c232;
+    letter-spacing: 1px;
+    padding: 5px 20px 5px 20px;
+    margin-left: 40px;
+
+}
+
+.inbox-text .btn2{
+    text-align: center;
+    width: 147px;
+    margin-top:30px;
+    display: inline-block;
+    border-radius: 6px;
+    border:2px solid #86c232;
+    color: black;
+    background-color:#86c232 ;
+    letter-spacing: 1px;
+    padding: 5px 20px 5px 20px;
+    margin-left: 118px;
+    }
+
+
+.scroll-down{
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    position: absolute;
+    left: 50%;
+    bottom: 13px ;
+    border-radius: 50px;
+    cursor: pointer;
+}
+        
+    .scroll-down::before,.scroll-down::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white; 
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+    top: 30%;
+    animation-delay: 0.3s;
+}
+    @keyframes scroll-down{
+        0%{
+        opacity: 0;
+        }
+
+        30%{
+        opacity: 1;
+        }
+
+        60%{
+        opacity: 1;
+        }  
+        100%{
+        opacity:0 ;
+        top: 90%;
+        }
+    }
